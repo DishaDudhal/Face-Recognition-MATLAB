@@ -32,6 +32,7 @@ for i=1:size(training,2)
 end
 
 %% --------------------------Create class classifier using fitcecoc--------------------------------------
+%%fitecoc stands for fit the Error Coreecting output codes model---------------------
 faceClassifier = fitcecoc(trainingFeatures,trainingLabel);
 % Test Images from Test Set 
 queryFace = read(test,1);
